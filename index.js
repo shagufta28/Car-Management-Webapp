@@ -2,8 +2,8 @@ const mongoose = require('mongoose');
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-const carsRoutes = require('../routes/cars');
-const authRoutes = require('../routes/auth');
+const carsRoutes = require('./routes/cars');
+const authRoutes = require('./routes/auth');
 const router = express.Router();
 require('dotenv').config();
 
@@ -11,7 +11,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-   origin: 'https://your-site-name.netlify.app' // Update to your Netlify domain
+   origin: '' // Update to your Netlify domain
 }));
 app.use(bodyParser.json());
 
