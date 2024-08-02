@@ -11,7 +11,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-   origin: '' // Update to your Netlify domain
+   origin: 'https://car-management-backend-km8wgvati-shagufta28s-projects.vercel.app/' // Update to your Netlify domain
 }));
 app.use(bodyParser.json());
 
