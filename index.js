@@ -10,11 +10,10 @@ require('dotenv').config();
 const app = express();
 
 // Middleware
-app.use(cors({
-  origin: 'http://localhost:3000', // or use '*' to allow all origins
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['Content-Type', 'Authorization']
-}));
+app.get('/cors', (req, res) => {
+  res.set('Access-Control-Allow-Origin', 'http://localhost:3000');
+  res.send({ "msg": "This has CORS enabled 🎈" })
+  })
 app.use(bodyParser.json());
 
 // Routes
