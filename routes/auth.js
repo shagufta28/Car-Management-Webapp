@@ -18,7 +18,6 @@ const users = {
 // Admin login
 router.post('/admin/login', (req, res) => {
   
-    res.send("running auth");
   
   const { username, password } = req.body;
   const user = users.admin;
