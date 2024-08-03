@@ -18,7 +18,7 @@
       },
       {
         "src": "/auth/admin/login",
-        "dest": "/auth"
+        "dest": "/admin/login"
       },
       {
         "src": "/auth/user/login",
