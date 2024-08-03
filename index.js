@@ -10,7 +10,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: '*', // or use '*' to allow all origins
+  origin: 'http://localhost:3000', // or use '*' to allow all origins
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
