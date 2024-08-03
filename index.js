@@ -17,9 +17,7 @@ app.get('/cors', (req, res) => {
 app.use(bodyParser.json());
 
 // Routes
-app.get('/', (req, res) => {
-  res.send("running");
-});
+
 
 
 app.use('/cars', carsRoutes);
