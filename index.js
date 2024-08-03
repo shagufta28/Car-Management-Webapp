@@ -11,7 +11,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-   origin: 'https://car-management-drab.vercel.app/' // Update to your Netlify domain
+   origin: 'http://localhost:3000/' // Update to your Netlify domain
 }));
 app.use(bodyParser.json());
 
