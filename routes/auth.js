@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const jwt = require('jsonwebtoken');
 
-const app = express();
+
 // Dummy users (for simplicity)
 const users = {
   admin: {
@@ -17,9 +17,9 @@ const users = {
 
 // Admin login
 router.post('/admin/login', (req, res) => {
-  app.get('/', (req, res) => {
+  
     res.send("running auth");
-  });
+  
   const { username, password } = req.body;
   const user = users.admin;
 

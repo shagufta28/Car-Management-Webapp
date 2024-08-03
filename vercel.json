@@ -18,11 +18,11 @@
       },
       {
         "src": "/auth/admin/login",
-        "dest": "/index.js"
+        "dest": "/auth"
       },
       {
         "src": "/auth/user/login",
-        "dest": "/index.js"
+        "dest": "/auth"
       }
     ]
   }
