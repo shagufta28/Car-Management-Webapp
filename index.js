@@ -11,7 +11,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-   origin: 'http://localhost:3000/' // Update to your Netlify domain
+   origin: 'https://car-management-webapp.netlify.app' // Update to your Netlify domain
 }));
 app.use(bodyParser.json());
 
@@ -19,6 +19,7 @@ app.use(bodyParser.json());
 app.get('/', (req, res) => {
   res.send("running");
 });
+
 
 app.use('/cars', carsRoutes);
 app.use('/auth', authRoutes);
