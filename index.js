@@ -10,10 +10,9 @@ require('dotenv').config();
 const app = express();
 
 // Middleware
-app.use(cors({
-   origin: 'https://car-management-webapp.netlify.app' // Update to your Netlify domain
-}));
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended:true}));
+app.use(cors());
 
 // Routes
 app.get('/', (req, res) => {
