@@ -4,8 +4,26 @@
       { "src": "/index.js", "use": "@vercel/node" }
     ],
     "routes": [
-      { "src": "/api/(.*)",
-       "dest": "/" }
+      { 
+        "src": "/api/(.*)",
+       "dest": "/"
+     },
+     {
+        "src": "/cars",
+       "dest": "/"
+     },
+     {
+        "src": "/auth",
+       "dest": "/"
+     },
+     {
+        "src": "/auth/admin/login",
+       "dest": "/"
+     },
+     {
+        "src": "/auth/user/login",
+       "dest": "/"
+     }
     ]
   }
   
